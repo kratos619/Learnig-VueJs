@@ -5,7 +5,9 @@ new Vue({
     link: "www.google.com",
     // link output by rawhtml
     fulllink: '<a href="www.google.com">go to google </a>',
-    counter: 0
+    counter: 0,
+    x: 0,
+    y: 0
   },
   methods: {
     changeTitle: function(event) {
@@ -17,6 +19,10 @@ new Vue({
     },
     incressCounter: function() {
       this.counter++;
+    },
+    updateCorr: function(event) {
+      this.x = event.clientX;
+      this.y = event.clientY;
     }
   }
 });
