@@ -17,8 +17,8 @@ new Vue({
       this.title = "world";
       return this.title;
     },
-    incressCounter: function() {
-      this.counter++;
+    incressCounter: function(step) {
+      this.counter += step;
     },
     updateCorr: function(event) {
       this.x = event.clientX;
