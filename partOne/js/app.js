@@ -23,6 +23,9 @@ new Vue({
     updateCorr: function(event) {
       this.x = event.clientX;
       this.y = event.clientY;
+    },
+    alertme: function() {
+      alert("you enter space");
     }
   }
 });
