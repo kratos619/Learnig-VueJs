@@ -2,7 +2,9 @@ new Vue({
   el: "#app",
   data: {
     title: "hi iam Vue Js from title!",
-    link: "www.google.com"
+    link: "www.google.com",
+    // link output by rawhtml
+    fulllink: '<a href="www.google.com">go to google </a>'
   },
   methods: {
     changeTitle: function(event) {
