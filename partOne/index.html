@@ -19,7 +19,9 @@
         <p v-html="fulllink"></p>
         <button v-on:click="incressCounter(10)">Click to incress counter</button>
         <p>counter Hit : {{counter}}</p>
-        <p v-on:mousemove="updateCorr"> Corrdinates : X :{{x}} and Y :{{y}}</p>
+        <p v-on:mousemove="updateCorr"> Corrdinates : X :{{x}} and Y :{{y}}
+            <span v-on:mousemove.stop="">-- Dead Stop</span>
+        </p>
     </div>
     <script src="js/app.js"></script>
 </body>
