@@ -1,6 +1,13 @@
 new Vue({
   el: "#app",
   data: {
-    name: "Gaurav"
+    counter: 0,
+    result: ""
+  },
+  methods: {
+    increse: function() {
+      this.counter++;
+      this.result = this.counter > 5 ? "Greater 5" : "smaller 5";
+    }
   }
 });
