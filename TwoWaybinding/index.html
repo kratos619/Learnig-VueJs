@@ -2,16 +2,41 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="js/vue.js"></script>
     <title>Two Way Binding</title>
+    <style>
+        .demo {
+
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            display: linline-block;
+            margin: 10px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .blue {
+            background-color: blueviolet;
+        }
+    </style>
 </head>
 
 <body>
     <div id="app">
-
+        <div class="demo" @click="attachred = !attachred" :class="{red: attachred}"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
     </div>
     <script src="js/app.js"></script>
 </body>
