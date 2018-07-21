@@ -35,8 +35,9 @@
 <body>
     <div id="app">
         <div class="demo" @click="attachred = !attachred" :class="{red: attachred}"></div>
+        <div class="demo" :class="color"></div>
         <div class="demo"></div>
-        <div class="demo"></div>
+        <input type="text" v-model="color">
     </div>
     <script src="js/app.js"></script>
 </body>

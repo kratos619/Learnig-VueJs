@@ -1,6 +1,7 @@
 new Vue({
   el: "#app",
   data: {
-    attachred: false
+    attachred: false,
+    color: "blue"
   }
 });
